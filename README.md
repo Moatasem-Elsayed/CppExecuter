@@ -1,6 +1,6 @@
 # Cpp Executor Daemon
 
-This C++ program runs as a background daemon that tracks specific keyboard events, manages clipboard content, and automates the creation, compilation, and execution of C++ files based on clipboard data. 
+This C++ program runs as a background daemon that tracks specific keyboard events, manages clipboard content, and automates the creation, compilation, and execution of C++ files based on clipboard data.
 
 ## Features
 1. **Track Keyboard Press**: The program listens for key combinations like `Ctrl + Shift + 1`, `Ctrl + Shift + 2`, and `Ctrl + Shift + 3` to trigger different functionalities.
@@ -26,5 +26,6 @@ cpp-executor-daemon/
 │   ├── CMakeLists.txt          # CMake configuration file
 │   └── main.cpp                # Main program that ties everything together
 └── README.md                   # Project documentation
-![image](https://github.com/user-attachments/assets/4656edf6-d53e-47b5-b14c-1d1d6c0077e9)
 
+
+![alt text](image.png)
