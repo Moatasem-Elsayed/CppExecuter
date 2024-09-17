@@ -2,6 +2,10 @@
 
 This C++ program runs as a background daemon that tracks specific keyboard events, manages clipboard content, and automates the creation, compilation, and execution of C++ files based on clipboard data.
 
+## Dependencies
+ - SFML
+ - CMAKE
+ - x-terminal-emulator
 ## Features
 1. **Track Keyboard Press**: The program listens for key combinations like `Ctrl + Shift + 1`, `Ctrl + Shift + 2`, and `Ctrl + Shift + 3` to trigger different functionalities.
 2. **Enable Clipboard Tracking (`Ctrl + Shift + 1`)**: When this key combination is pressed, the daemon starts monitoring the clipboard. Every time `Ctrl + C` is pressed (copy action), it collects data from the clipboard.
