@@ -26,4 +26,5 @@ cpp-executor-daemon/
 │   ├── CMakeLists.txt          # CMake configuration file
 │   └── main.cpp                # Main program that ties everything together
 └── README.md                   # Project documentation
-![image](https://github.com/user-attachments/assets/e48f086d-6c3e-47d8-855c-d2422a4adb2b)
+![image](https://github.com/user-attachments/assets/4656edf6-d53e-47b5-b14c-1d1d6c0077e9)
+
