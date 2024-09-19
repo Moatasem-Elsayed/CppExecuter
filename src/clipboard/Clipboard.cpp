@@ -23,8 +23,7 @@ Clipboard::Clipboard() {
 }
 
 Clipboard::~Clipboard() {
-  // std::cout << "[DEBUG] destructor" << std::endl;
-  std::unique_lock<std::mutex> lk(m_mutex);
+  std::cout << "[DEBUG] destructor" << std::endl;
   m_running = false;
   m_cv.notify_all();
   m_thread.join();
@@ -45,9 +44,7 @@ void Clipboard::press_copy_handler() {
   }
 }
 void Clipboard::enableClipboard() {
-  if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LShift) &&
-      sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LControl) &&
-      sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num1) && !m_activate) {
+  if (!m_activate) {
     // Enable
     std::unique_lock<std::mutex> lk_content(m_mutex_content);
     std::cout << "Enable" << std::endl;

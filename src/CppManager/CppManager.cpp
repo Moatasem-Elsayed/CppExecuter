@@ -34,9 +34,7 @@ CppManager::~CppManager() {}
 void CppManager::manage(Clipboard &content) {
   while (1) {
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LShift) &&
-        sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LControl) &&
-        sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num3)) {
+    if (m_currentFile.status == StatusFile::SUCCESS) {
       std::cout << "exit" << std::endl;
       std::cout << content.getContent().data << std::endl;
       break;
